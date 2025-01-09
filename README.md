@@ -44,6 +44,35 @@ Nutriplan is a cutting-edge application designed to provide personalized nutriti
    cd Nutriplan
 
 
+## Create a Virtual Environment:
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+## Install Dependencies:
+    pip install -r requirements.txt
+    Set Up Environment Variables:
+
+## Set Up Environment Variables:
+  ### Create a .env file in the project root with the following content:
+    GEMINI_API_KEY=your_api_key_here
+  Replace your_api_key_here with your actual Gemini AI API key.
+  
+## Run the Application:
+    streamlit run app.py
+Open your browser and navigate to the provided localhost URL.
+
+🧩 Folder Structure
+bash
+Copy code
+Nutriplan/
+│
+├── app.py                # Main Streamlit application
+├── api_key.py            # (Removed for security; use .env for keys)
+├── requirements.txt      # Python dependencies
+├── .gitignore            # Ignored files and folders
+├── .env                  # Environment variables (not tracked by Git)
+└── README.md             # Project documentation
+
 📜 Usage Instructions
 Generate a Meal Plan:
 
@@ -73,5 +102,14 @@ Follow best practices for secret management.
 
 🤝 Contributions
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
+
+
+---
+
+### Key Notes:
+- Replace placeholders like `<repository_url>`, `your_api_key_here`, and `your_email@example.com` with actual details.
+- Add more information if your project includes unique features or improvements over time.
+
+Let me know if you'd like to customize any section further!
 
 
