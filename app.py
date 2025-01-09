@@ -25,7 +25,6 @@ def analyze_food_image(image_data):
 # Function to generate personalized meal plan based on user data
 def generate_meal_plan(age, weight, height, dietary_needs):
     prompt = f"Create a personalized meal plan for a {age}-year-old person weighing {weight} kg and {height} cm tall with dietary needs: {dietary_needs}."
-    
     try:
         response = genai.GenerativeModel('gemini-1.5-flash').generate_content([prompt])
         return response.text.strip()
